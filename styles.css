@@ -1,0 +1,42 @@
+/* Custom workspace canvas backdrop matching blueprint dark-grid style */
+.workspace-grid {
+  background-color: #050b18;
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.05) 0px, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(6, 182, 212, 0.04) 0px, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+  scroll-behavior: smooth;
+}
+
+/* Visual node active outline pulses */
+@keyframes nodePulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(16, 185, 129, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+}
+
+.node-active-highlight {
+  animation: nodePulse 1.5s infinite;
+  border-color: #10b981 !important;
+}
+
+/* Custom scrollbars across the system */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
