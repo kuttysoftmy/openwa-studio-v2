@@ -1,0 +1,16 @@
+{
+  "name": "openwa-studio-v2",
+  "version": "2.0.0",
+  "description": "Visual drag-and-drop workflow designer and real-time webhook simulator for the OpenWA self-hosted gateway.",
+  "main": "index.html",
+  "keywords": [
+    "openwa",
+    "whatsapp",
+    "workflow",
+    "webhook",
+    "simulator",
+    "automation"
+  ],
+  "author": "Angela / AutoPilot",
+  "license": "MIT"
+}
